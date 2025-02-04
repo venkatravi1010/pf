@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkata Ravi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="profile.jpg" alt="Venkata Ravi" class="profile-pic">
+    
+    <div class="container">
+        <h1>Venkata Ravi</h1>
+        <p>Data Analyst | ML Enthusiast</p>
+        
+        <div class="buttons">
+            <button onclick="toggleDropdown('projects')">Projects</button>
+            <div class="dropdown-content" id="projects">
+                <h3>Project 1</h3>
+                <p>Fraud Detection Model - Built an ML model to detect fraudulent transactions.</p>
+                <p>Interesting right? <a href="https://github.com/venkatravi1010/project1" target="_blank">Let's take a look at my code</a></p>
+                <h3>Project 2</h3>
+                <p>Customer Churn Prediction - Developed a logistic regression model.</p>
+                <p>Interesting right? <a href="https://github.com/venkatravi1010/project2" target="_blank">Let's take a look at my code</a></p>
+            </div>
+            
+            <button onclick="toggleDropdown('skills')">Skills</button>
+            <div class="dropdown-content" id="skills">
+                <p>Excited about what I can offer you?</p>
+                <ul>
+                    <li>Python, SQL, R</li>
+                    <li>Machine Learning, Deep Learning</li>
+                    <li>Power BI, Tableau</li>
+                    <li>Data Wrangling, ETL</li>
+                </ul>
+            </div>
+            
+            <button onclick="toggleDropdown('contact')">Contact</button>
+            <div class="dropdown-content" id="contact">
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/venkatravi" target="_blank">linkedin.com/in/venkatravi</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Created by Venkata ☕❤️</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === \"block\") {
+                dropdown.style.display = \"none\";
+            } else {
+                dropdown.style.display = \"block\";
+            }
+        }
+    </script>
+</body>
+</html>
